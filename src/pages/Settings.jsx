@@ -104,7 +104,10 @@ export default function Settings() {
                       onClick={() => setNotifications(n => ({ ...n, [item.key]: !n[item.key] }))}
                       className={`w-11 h-6 rounded-full transition-all relative flex-shrink-0 ${notifications[item.key] ? 'bg-violet-600' : 'bg-slate-200'}`}
                     >
-                      <span className={`absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-all ${notifications[item.key] ? 'left-5.5 translate-x-0.5' : 'left-0.5'}`} />
+                      <span
+                        className="absolute top-0.5 w-5 h-5 bg-white rounded-full shadow transition-all duration-200"
+                        style={{ left: notifications[item.key] ? '22px' : '2px' }}
+                      />
                     </button>
                   </div>
                 ))}

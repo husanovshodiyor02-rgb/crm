@@ -76,8 +76,8 @@ export default function Employees() {
                 <span className="font-semibold text-slate-700">{e.tasks}</span> ta faol vazifa
               </div>
               <div className="flex gap-2">
-                <button className="text-xs px-2.5 py-1.5 bg-violet-50 text-violet-600 rounded-lg hover:bg-violet-100 font-medium">Profil</button>
-                <button className="text-xs px-2.5 py-1.5 bg-slate-50 text-slate-600 rounded-lg hover:bg-slate-100 font-medium">Xabar</button>
+                <button className="text-xs px-3 py-2 bg-violet-50 text-violet-600 rounded-lg hover:bg-violet-100 font-medium">Profil</button>
+                <button className="text-xs px-3 py-2 bg-slate-50 text-slate-600 rounded-lg hover:bg-slate-100 font-medium">Xabar</button>
               </div>
             </div>
           </div>

@@ -59,8 +59,8 @@ export default function Products() {
         </div>
         <div className="flex items-center gap-2 ml-auto">
           <div className="flex gap-1 bg-slate-100 p-1 rounded-xl">
-            <button onClick={() => setView('table')} className={`px-3 py-1.5 text-sm rounded-lg transition-all ${view === 'table' ? 'bg-white shadow-sm text-slate-800' : 'text-slate-500'}`}>☰</button>
-            <button onClick={() => setView('grid')} className={`px-3 py-1.5 text-sm rounded-lg transition-all ${view === 'grid' ? 'bg-white shadow-sm text-slate-800' : 'text-slate-500'}`}>⊞</button>
+            <button onClick={() => setView('table')} className={`px-3 py-2 text-sm rounded-lg transition-all font-medium ${view === 'table' ? 'bg-white shadow-sm text-slate-800' : 'text-slate-500 hover:text-slate-700'}`}>☰</button>
+            <button onClick={() => setView('grid')} className={`px-3 py-2 text-sm rounded-lg transition-all font-medium ${view === 'grid' ? 'bg-white shadow-sm text-slate-800' : 'text-slate-500 hover:text-slate-700'}`}>⊞</button>
           </div>
           <button className="px-4 py-2.5 bg-violet-600 text-white text-sm font-medium rounded-xl hover:bg-violet-700 transition-colors shadow-md shadow-violet-600/20">
             + Mahsulot
@@ -86,8 +86,8 @@ export default function Products() {
                   <span className="text-xs text-slate-400">Zaxira: {p.stock}</span>
                 </div>
                 <div className="mt-3 pt-3 border-t border-slate-100 flex gap-2">
-                  <button className="flex-1 text-xs py-1.5 bg-violet-50 text-violet-600 rounded-lg hover:bg-violet-100 font-medium">Tahrir</button>
-                  <button className="flex-1 text-xs py-1.5 bg-slate-50 text-slate-600 rounded-lg hover:bg-slate-100 font-medium">Ko'rish</button>
+                  <button className="flex-1 text-xs py-2 bg-violet-50 text-violet-600 rounded-lg hover:bg-violet-100 font-medium">Tahrir</button>
+                  <button className="flex-1 text-xs py-2 bg-slate-50 text-slate-600 rounded-lg hover:bg-slate-100 font-medium">Ko'rish</button>
                 </div>
               </div>
             </div>
@@ -134,8 +134,8 @@ export default function Products() {
                     </td>
                     <td className="px-5 py-4">
                       <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <button className="text-xs px-2.5 py-1.5 bg-violet-50 text-violet-600 rounded-lg hover:bg-violet-100 font-medium">Tahrir</button>
-                        <button className="text-xs px-2.5 py-1.5 bg-red-50 text-red-500 rounded-lg hover:bg-red-100 font-medium">O'chirish</button>
+                        <button className="text-xs px-3 py-2 bg-violet-50 text-violet-600 rounded-lg hover:bg-violet-100 font-medium">Tahrir</button>
+                        <button className="text-xs px-3 py-2 bg-red-50 text-red-500 rounded-lg hover:bg-red-100 font-medium">O'chirish</button>
                       </div>
                     </td>
                   </tr>

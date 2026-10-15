@@ -28,7 +28,7 @@ export default function Sidebar({ active, onNavigate, collapsed, onToggle }) {
         )}
         <button
           onClick={onToggle}
-          className="ml-auto w-6 h-6 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white transition-colors flex items-center justify-center text-sm flex-shrink-0"
+          className="ml-auto w-6 h-6 rounded-md bg-white/10 hover:bg-white/20 text-white transition-colors flex items-center justify-center text-sm flex-shrink-0"
           aria-label="Toggle sidebar"
         >
           {collapsed ? '›' : '‹'}

@@ -1,11 +1,10 @@
 import { useState } from 'react';
 
-export default function Settings() {
+export default function Settings({ toast, theme, setTheme }) {
   const [activeTab, setActiveTab] = useState('profile');
   const [notifications, setNotifications] = useState({
     email: true, push: true, sms: false, reports: true,
   });
-  const [theme, setTheme] = useState('light');
 
   const tabs = [
     { id: 'profile', label: 'Profil', icon: '👤' },
@@ -76,7 +75,7 @@ export default function Settings() {
                   </div>
                 ))}
               </div>
-              <button className="px-6 py-2.5 bg-violet-600 text-white text-sm font-medium rounded-xl hover:bg-violet-700 transition-colors shadow-md shadow-violet-600/20">
+              <button onClick={() => toast?.success('Profil saqlandi')} className="px-6 py-2.5 bg-violet-600 text-white text-sm font-medium rounded-xl hover:bg-violet-700 transition-colors shadow-md shadow-violet-600/20">
                 Saqlash
               </button>
             </div>
@@ -144,7 +143,7 @@ export default function Settings() {
                   2FA yoqish
                 </button>
               </div>
-              <button className="px-6 py-2.5 bg-violet-600 text-white text-sm font-medium rounded-xl hover:bg-violet-700 transition-colors shadow-md shadow-violet-600/20">
+              <button onClick={() => toast?.success('Parol yangilandi')} className="px-6 py-2.5 bg-violet-600 text-white text-sm font-medium rounded-xl hover:bg-violet-700 transition-colors shadow-md shadow-violet-600/20">
                 Parolni yangilash
               </button>
             </div>
